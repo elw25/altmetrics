@@ -1,0 +1,50 @@
+---
+title: "TrialReportforRMarkdown"
+author: "Erica Westerman"
+date: "September 15, 2015"
+output: html_document
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+summary(cars)
+```
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+ 
+ Here we include stuff in chunks. Here, it will run R and display outputs. 
+ 
+ We can add chunks through clicky, control option i, or something else. 
+ 
+ 
+ 
+ ```{r}
+ dim(cars)
+
+```
+
+how fun is that!
+
+I can look at the R Markdown tab and see what R is actually doing
+
+default will show code as written. I don't always want to do that. If I do echo=false, R won't include everything in the report  
+
+Sometimes we want to show code but not output. That is results="hide"
+
+What is the numer of cars**?
+```{r, include=FALSE}
+dim(cars) [1]
+
+```
+
+
+
